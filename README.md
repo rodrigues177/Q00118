@@ -14,7 +14,7 @@ Check Balance of Dataset:
 * 5x more non-hazardous asteroids than hazardous asteroids
 * Important to know so that we can train our machine learning models to take this into account
 
-![alt text](https://github.com/rodrigues177/Q00118/blob/images/ML Balance.png?raw=true)
+![alt text](https://github.com/rodrigues177/Q00118/blob/images/ML_Balance.png?raw=true)
 
 Pre-Processing Data:
 * Normalized the dataset
