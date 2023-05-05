@@ -15,6 +15,8 @@ Check Balance of Dataset:
 * Important to know so that we can train our machine learning models to take this into account
 
 ![alt text](https://github.com/rodrigues177/Q00118/images/ML_Balance.png?raw=true)
+![Balance](/images/ML_Balance.png)
+
 
 Pre-Processing Data:
 * Normalized the dataset
