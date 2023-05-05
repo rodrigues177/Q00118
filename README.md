@@ -14,9 +14,7 @@ Check Balance of Dataset:
 * 5x more non-hazardous asteroids than hazardous asteroids
 * Important to know so that we can train our machine learning models to take this into account
 
-![alt text](https://github.com/rodrigues177/Q00118/images/ML_Balance.png?raw=true)
 ![Balance](/images/ML_Balance.png)
-
 
 Pre-Processing Data:
 * Normalized the dataset
@@ -24,20 +22,20 @@ Pre-Processing Data:
 * Removed features regarding identification/timing
 * Important to know so that we can reduce processing time when training model
 
-<FIGURE>
+![Distribution](/images/ML_Distribution.png)
   
 Correlation:
 * Conducted a heatmap and pairplot to see correlation
 * Important to know the relationships amongst the variables
   
- <FIGURE>
+![Heatmap](/images/ML_Heatmap.png)
   
-We gound three main correlated groups (in descending order):
+We found three main correlated groups (in descending order):
 * Jupiter Tisserand Invariant, Mean Motion, Aphelion Distance, Orbital Period, Semi Major Axis (~0.9)
 * Eccentricity, Aphelion Distance (~0.7)
 * Absolute Magnitude, Estimated Diameter in Km (max) (~0.6)
  
-<FIGURE>
+![Pairplot](/images/ML_Pairplot.png)
   
 Machine Learning Models:
  
@@ -54,7 +52,7 @@ The **most important features** are, in descending order:
 * Minimum Orbit Intersection, with a score of 0.223
 * Absolute Magnitude, with a score of 0.176
 
-<FIGURE>
+![Permutation Importance Results](/images/Permutation_Importance_Results.png)
 
 This can be attributed to the fact that... <insights>... <hazardous NEOs>
 
