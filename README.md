@@ -54,6 +54,6 @@ The **most important features** are, in descending order:
 
 ![Permutation Importance Results](/images/Permutation_Importance_Results.png)
 
-This can be attributed to the fact that... <insights>... <hazardous NEOs>
+This can be attributed to the fact that as stated from the Center for Near Earth Object Studies website, "Potentially Hazardous Asteroids (PHAs) are currently defined based on parameters that measure the asteroid's potential to make threatening close approaches to the Earth. Specifically, all asteroids with an Earth Minimum Orbit Intersection Distance (MOID) of 0.05 au or less and an absolute magnitude (H) of 22.0 or less are considered PHAs.". Our results align with this such that the two main defining features of our model to whether an asteroid is hazardous or not are the minimum orbit intersection and absolute magnitude.
 
 ## Conclusions
