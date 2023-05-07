@@ -128,7 +128,7 @@ This can be attributed to the fact that as stated from the Center for Near Earth
 
 When monitoring and preventing potentially hazardous asteroid impacts, based on our results, scientists can collect the data of and look into two main features of asteroids - the Minimum Orbit Intersection and Absolute Magnitude. With these values, we will be able to determine whether they are hazardous or not. 
 
-We also developed 2 predictive models that work well with this type of data: a artificial neural network (which takes some time to train but is a near-perfect classifier) and a stacking model (which is good and fast). This models could be applied in a real world setting to filter down the number of asteroid threats that should be thoroughly analysed by an astronomer."
+We also developed 2 predictive models that work well with this type of data: an artificial neural network (which takes some time to train but is a near-perfect classifier) and a stacking model (which is good and fast). These models could be applied in a real world setting to filter down the number of asteroid threats that should be thoroughly analysed by an astronomer.
 
 ### Future Work
 
