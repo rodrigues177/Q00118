@@ -51,7 +51,7 @@ As predictive models, we used 5 different model architectures:
 
 #### Neural Network
 
-In the following figure is the Neural Network architecture used:
+A feed-forward fully connected artificial neural network. In the following figure is the architecture used:
 
 ![NN Architecture](/images/ML_NN_Architecture.png)
 
@@ -93,7 +93,7 @@ The following table resumes our findings:
 
 ![Results Table](/images/ML_Results_Table.png)
 
-From the non Neural Network models, the Stacking Classifier got the best score. The Stacking Classifier is not as good as the Neural Network, but takes less then 1% of the time that the Neural Network takes to train and is only slighly worse. Even if we train the Neural Network in a small number of epoch (ex: 15), it takes more time to train and the result is pratically the same in terms of AUC/F1-Score.
+From the non Neural Network models, the Stacking Classifier got the best score. The Stacking Classifier is not as good as the Neural Network, but takes less then 1% of the time that the Neural Network takes to train and is only slighly worse. Even if we train the Neural Network in a small number of epoch (ex: 15), it takes more time to train and the result is practically the same in terms of AUC/F1-Score.
 
 The Stacking Classifier compared to the other weak classifiers has a simultaneously higher Precision and Recall (and thus a higher F1-Score and Accuracy). Other less obvious advantage is that it outputs probabilities instead of only a 0-1 classification. It takes twice the time of the weak models to train.
 
@@ -110,10 +110,15 @@ The **most important features** are, in descending order:
 This can be attributed to the fact that as stated from the Center for Near Earth Object Studies website, "Potentially Hazardous Asteroids (PHAs) are currently defined based on parameters that measure the asteroid's potential to make threatening close approaches to the Earth. Specifically, all asteroids with an Earth Minimum Orbit Intersection Distance (MOID) of 0.05 au or less and an absolute magnitude (H) of 22.0 or less are considered PHAs.". Our results align with this such that the two main defining features of our model to whether an asteroid is hazardous or not are the minimum orbit intersection and absolute magnitude.
 
 ## Conclusions
+
 ### Take-away Points
+
 When monitoring and preventing potentially hazardous asteroid impacts, based on our results, scientists can collect the data of and look into two main features of asteroids - the Minimum Orbit Intersection and Absolute Magnitude. With these values, we will be able to determine whether they are hazardous or not. 
 
+We also developed 2 predictive models that work well with this type of data: a artificial neural network (which takes some time to train but is a near-perfect classifier) and a stacking model (which is good and fast). This models could be applied in a real world setting to filter down the number of asteroid threats that should be thoroughly analysed by an astronomer."
+
 ### Future Work
+
 There are still lingering questions left unanswered:
 * What values of Minimum Orbit Intersection and Absolute Magnitude will lead to an asteroid being hazardous?
 * Why do these features determine whether an asteroid is hazardous?
