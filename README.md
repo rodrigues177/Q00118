@@ -109,3 +109,12 @@ The **most important features** are, in descending order:
 This can be attributed to the fact that as stated from the Center for Near Earth Object Studies website, "Potentially Hazardous Asteroids (PHAs) are currently defined based on parameters that measure the asteroid's potential to make threatening close approaches to the Earth. Specifically, all asteroids with an Earth Minimum Orbit Intersection Distance (MOID) of 0.05 au or less and an absolute magnitude (H) of 22.0 or less are considered PHAs.". Our results align with this such that the two main defining features of our model to whether an asteroid is hazardous or not are the minimum orbit intersection and absolute magnitude.
 
 ## Conclusions
+### Take-away Points
+When monitoring and preventing potentially hazardous asteroid impacts, based on our results, scientists can collect data of and look into two main features - the Minimum Orbit Intersection and Absolute Magnitude values of these asteroids to determine whether they are hazardous or not. 
+
+### Future Work
+There are still lingering questions left unanswered:
+* What values of Minimum Orbit Intersection and Absolute Magnitude will lead to an asteroid being hazardous?
+* Why do these features determine whether an asteroid is hazardous?
+
+To look into this, we can train our model more with a larger dataset with a focus of more varied values of the two features. This way we can predict a potential minimum value for each feature to which an asteroid can be considered hazardous.
