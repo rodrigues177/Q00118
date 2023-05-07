@@ -4,6 +4,19 @@
 #### Tiago de Sousa Rodrigues - Q00118
 #### Yeo Shi Lee Tan - E13329
 
+### Local Setup
+
+To install dependencies, run:
+
+```
+pip install -r requirements.txt
+```
+
+Or run the first cell of the Jupyter notebook file:
+
+```
+pip install git+https://github.com/rodrigues177/Q00118.git@main
+```
 
 ## Introduction
 To **gain insights into the characteristics** of asteroids that could potentially impact Earth and to analyze this data and identify patterns and trends that can **inform recommendations for monitoring and preventing potentially hazardous asteroid impacts**.
