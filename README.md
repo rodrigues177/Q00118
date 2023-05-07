@@ -9,6 +9,7 @@
 To **gain insights into the characteristics** of asteroids that could potentially impact Earth and to analyze this data and identify patterns and trends that can **inform recommendations for monitoring and preventing potentially hazardous asteroid impacts**.
 
 ## Methods
+### Exploratory Data Analysis:
 Check Balance of Dataset:
 * Imbalanced
 * 5x more non-hazardous asteroids than hazardous asteroids
@@ -86,7 +87,7 @@ We used our best kNN (with 3 neighbours) and SVM (with "poly" as kernel). Our fi
 
 ## Results
 
-### Predictive models
+### Predictive Models
 
 The following table resumes our findings:
 
@@ -110,7 +111,7 @@ This can be attributed to the fact that as stated from the Center for Near Earth
 
 ## Conclusions
 ### Take-away Points
-When monitoring and preventing potentially hazardous asteroid impacts, based on our results, scientists can collect data of and look into two main features - the Minimum Orbit Intersection and Absolute Magnitude values of these asteroids to determine whether they are hazardous or not. 
+When monitoring and preventing potentially hazardous asteroid impacts, based on our results, scientists can collect the data of and look into two main features of asteroids - the Minimum Orbit Intersection and Absolute Magnitude. With these values, we will be able to determine whether they are hazardous or not. 
 
 ### Future Work
 There are still lingering questions left unanswered:
