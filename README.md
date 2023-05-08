@@ -56,7 +56,7 @@ We found three main correlated groups (in descending order):
 As model quality metrics, we mainly used two:
 
 - Area Under the Curve - is one of the best measures in highly unbalanced datasets like ours.
-- F1-Score - whenever the model at hand did not calculate probabilites (ex: SVM, kNN). In this type of models, the ROC curve is flat and AUC is a bad measure.
+- F1-Score - whenever the model at hand did not calculate probabilites (ex: SVM, kNN). In this type of models, the ROC curve is flat and AUC is a bad measure. We could use probabilistic versions of SVM and kNN, but we choose not to do it since it introduces other problems.
 
 With probabilities as output we can define a threshold different to 0.5. In our case, classifying a threatful asteroid as non-hazardous (a false negative) is worse then classifying as hazardous a non-threatful asteroid (false positive). Which means that we should set a threshold superior to 0.5.
 
@@ -82,7 +82,7 @@ We did Cross Validation to test what was the best kernel to use in the SVM. "pol
 
 #### Bagging SVM
 
-A standard bagging model, using the SVM with "poly" kernel as estimator. 
+A standard bagging model, using the SVM with kernel="poly" as estimator. 
 
 #### Stacking Classifier
 
@@ -90,7 +90,7 @@ In the following figure is the Stacking Classifier architecture used:
 
 <img src="images/ML_SCLF_Architecture.png" alt="SCLF Architecture" width="280" height="250">
 
-We used our best kNN (with 3 neighbours) and SVM (with "poly" as kernel). Our final estimator is a logistic regression, because it outputs probabilities instead of only classifications. With probabilities we can plot the ROC curve and change the threshold (in our case, a false negative is worse then a false positive).
+We used our best kNN (with 3 neighbours) and SVM (with kernel="poly"). We choose logistic regression as our final estimator because it outputs probabilities instead of only classifications. With probabilities we can plot the ROC curve and change the threshold (in our case, a false negative is worse then a false positive).
 
 ## Experimental Design
 **Permutation Importance:**
@@ -108,7 +108,7 @@ The following table resumes our findings:
 
 From the non Neural Network models, the Stacking Classifier got the best score. The Stacking Classifier is not as good as the Neural Network, but takes less then 1% of the time that the Neural Network takes to train and is only slighly worse. Even if we train the Neural Network in a small number of epoch (ex: 15), it takes more time to train and the result is practically the same in terms of AUC/F1-Score.
 
-The Stacking Classifier compared to the other weak classifiers has a simultaneously higher Precision and Recall (and thus a higher F1-Score and Accuracy). Other less obvious advantage is that it outputs probabilities instead of only a 0-1 classification. It takes twice the time of the weak models to train.
+The Stacking Classifier compared to the other weak classifiers has a simultaneously higher Precision and Recall (and thus a higher F1-Score and Accuracy). Other less obvious advantage is that it outputs probabilities instead of only a 0-1 classification.
 
 ### Insights
 
